@@ -1,0 +1,16 @@
+package aaa;
+
+public class DemoException {
+
+	public static void main(String[] args) throws ArithmeticException
+	{
+		
+        int i,j,k;
+        i=9;
+        j=0;
+        k=i/j;
+        System.out.println(k);
+
+	}
+
+}

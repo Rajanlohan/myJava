@@ -1,0 +1,25 @@
+package demojava;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class ListInterface {
+
+	public static void main(String[] args) {
+
+		List<Integer> value = new ArrayList<>();
+		value.add(5);
+		value.add(6);
+		value.add(2);
+		value.add(8);
+
+		Collections.sort(value);
+		Collections.reverse(value);
+//		value.forEach(System.out::println);    // lambda expression
+		for (int i : value)
+			System.out.println(i);
+
+	}
+
+}

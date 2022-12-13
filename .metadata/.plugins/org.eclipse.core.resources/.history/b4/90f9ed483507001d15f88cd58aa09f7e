@@ -1,0 +1,20 @@
+package demojava;
+
+public class InnerClass {
+	
+	int i;
+	
+	class inner
+	{
+		int j;
+	}
+
+	public static void main(String[] args) {
+		
+		InnerClass obj = new InnerClass();
+		
+		System.out.println(obj.i = 3);
+
+	}
+
+}

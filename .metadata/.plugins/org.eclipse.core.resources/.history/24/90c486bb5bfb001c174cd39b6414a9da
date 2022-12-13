@@ -1,0 +1,27 @@
+package revisionAll;
+
+public class FibonacciSeries {
+
+	public static void fibo(int n) {
+		int k=0;
+		int a=1, b=1;
+		
+		System.out.print("1 1 ");
+		while(k<=n) {
+			
+			k= a+b;
+			System.out.print(k+" ");
+			
+			a=b;
+			b=k;
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		fibo(12);
+
+	}
+
+}

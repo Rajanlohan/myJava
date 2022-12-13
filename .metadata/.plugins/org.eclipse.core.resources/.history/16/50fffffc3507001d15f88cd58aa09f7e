@@ -1,0 +1,27 @@
+package demojava;
+
+public class InnerClass {
+	
+	int i;
+	
+	static class Inner
+	{
+		int j;
+	}
+
+	public static void main(String[] args) {
+		
+		InnerClass obj = new InnerClass();
+		
+		System.out.println(obj.i = 3);
+
+//		InnerClass.Inner obj1 = obj.new Inner();
+//		obj1.j = 2;
+		
+		InnerClass.Inner obj1 = new Inner();
+		obj1.j= 6;
+		System.out.println(obj1.j);
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package aaa;
+
+public class MethodOverriding {
+
+	public static void main(String[] args) {
+
+	A obj = new A();
+		
+	}
+
+}
+
+class A {
+
+	public A() 
+	{
+		System.out.println("method A without parameter");
+	}
+}
+
+class B extends A
+{
+
+	public B() {
+		System.out.println("method B without parameter");
+	}
+}

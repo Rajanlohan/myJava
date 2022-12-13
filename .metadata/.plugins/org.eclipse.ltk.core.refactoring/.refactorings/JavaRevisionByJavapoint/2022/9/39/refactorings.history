@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;RotationArray&apos; to &apos;MaximumNumberArray&apos;&#x0D;&#x0A;- Original project: &apos;JavaRevisionByJavapoint&apos;&#x0D;&#x0A;- Original element: &apos;RotationArray&apos;&#x0D;&#x0A;- Renamed element: &apos;MaximumNumberArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RotationArray&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{RotationArray.java[RotationArray" matchStrategy="1" name="MaximumNumberArray" qualified="false" references="true" similarDeclarations="false" stamp="1663753393998" textual="false" version="1.0"/>
+</session>

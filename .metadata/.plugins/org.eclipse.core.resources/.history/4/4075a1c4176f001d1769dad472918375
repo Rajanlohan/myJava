@@ -1,0 +1,33 @@
+package interiewAskedQuestion;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class DupElemntArray {
+
+	public static void main(String[] args) {
+
+		String Dup[] = { "Ram", "Shyam", "Dell", "Sell", "Ram", "Dell" };
+//		for (int i = 0; i < Dup.length; i++) {
+//			for (int j = i + 1; j < Dup.length; j++) {
+//				if (Dup[i].equals(Dup[j])) {
+//					System.out.println(Dup[j]);
+//				}
+//			}
+//		}
+
+		Set<String> data = new HashSet<String>();
+		for(String e: Dup) {
+			if(data.add(e) == false) {
+				System.out.println(e);
+			}
+		}
+			
+		//By using hashmap
+		
+		Map
+		
+		
+	}
+
+}

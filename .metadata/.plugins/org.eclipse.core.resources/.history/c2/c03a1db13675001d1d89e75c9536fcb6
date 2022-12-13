@@ -1,0 +1,30 @@
+package interiewAskedQuestion;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class ArrayJoin {
+
+	public static void main(String[] args) {
+		
+		int s= sum(2,3);
+		System.out.println(s);
+		String Batsman[] = {"Rohit","Ramesh","Sikhar","Ram","Goutam"};
+		String Bowler[] = {"Sohan","Rakesh","Sivam","Roni","Sidhar"};
+		
+		Stream<String> Bats = Arrays.stream(Batsman);
+		Stream<String> Bow = Arrays.stream(Bowler);
+		
+		String fullteam[] =Stream.concat(Bats, Bow).toArray(size -> new String[size]);
+		for(String st : fullteam) {
+			System.out.println(st);
+			
+		}
+	}
+	public static int sum(int a, int b) {
+		
+		int c=a+b;
+		
+		return c;
+	}
+}

@@ -1,0 +1,33 @@
+package revisionAll;
+
+import java.util.Scanner;
+
+public class FibonacciSeries {
+
+	public static void fibo() {
+		int k=0;
+		Scanner sc= new Scanner(System.in);
+		int a=1, b=1;
+		System.out.println("Enter any number");
+		int n= sc.nextInt();
+		System.out.print("1 1 ");
+		while(k<=n) {
+			
+			k= a+b;
+			if(k>=n)
+				break;
+			System.out.print(k+" ");
+			
+			a=b;
+			b=k;
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		fibo();
+
+	}
+
+}

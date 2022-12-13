@@ -1,0 +1,13 @@
+package aaa;
+
+public class SplitingString {
+
+	public static void main(String[] args) {
+		
+	String str = "Tarun, Manu, Varun, Rajan";
+	
+	System.out.println(str);
+		
+	}
+
+}
