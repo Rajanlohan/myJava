@@ -1,5 +1,7 @@
 package seleniumRevision;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +18,10 @@ public class WonderLandBakeryConcept {
 		driver.manage().deleteAllCookies();
 
 		driver.get("http://wonderlandbakery.com");
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
+		driver.findElement(By.xpath("//div[@class='modal-header']//following::button//span")).click();
 		
 		Actions action = new Actions(driver);
 		

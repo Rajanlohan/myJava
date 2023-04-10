@@ -11,11 +11,13 @@ public class HandleDropBox {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rajan\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		
-		driver.manage().window().maximize();
+		 
+		driver.manage().window().maximize(); 
 		driver.manage().deleteAllCookies();
 		
 		driver.get("http://wonderlandbakery.com/add_user.php"); 
+		
+		 driver.findElement(By.xpath("//div[@class='modal-header']//following::button//span")).click();
 		
 		driver.findElement(By.name("fname")).sendKeys("Rajan");
 		driver.findElement(By.name("lname")).sendKeys("Lohan");
@@ -23,7 +25,7 @@ public class HandleDropBox {
 		driver.findElement(By.xpath("//input[@value='Female']")).click();
 
 //        Select value = new Select(driver.findElement(By.name("sex")));
-//        value.selectByVisibleText("Female");
+//        value.selectByVisibleText("Female"); 
         		
 		driver.findElement(By.name("st_add")).sendKeys("11 street, noida, uttar pradesh");
 		driver.findElement(By.name("city")).sendKeys("Noida");

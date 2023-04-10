@@ -38,7 +38,7 @@ public class HandleWindowPopUp {
 		
 		driver.switchTo().window(parentWindowId);
 		Thread.sleep(2000);
-		System.out.println("parent window title" +driver.getTitle());
+		System.out.println("parent window title1" +driver.getTitle());
 		
 
 	}

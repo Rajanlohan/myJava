@@ -13,7 +13,7 @@ public class BootstrapDropDownHandle {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rajan\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		
+		 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
@@ -32,9 +32,9 @@ public class BootstrapDropDownHandle {
 		
 	
 		
-//		driver.findElement(By.xpath("//button[contains(@class,'multiselect dropdown')]//following::ul/li[6]//input[@value='Angular']")).click();
-//		driver.findElement(By.xpath("//button[contains(@class,'multiselect dropdown')]//following::ul/li[8]//input[@value='Java']")).click();
-//		driver.findElement(By.xpath("//ul[@class='multiselect-container dropdown-menu']/li[10]/a/label[@class='checkbox']")).click();
+		driver.findElement(By.xpath("//button[contains(@class,'multiselect dropdown')]//following::ul/li[6]//input[@value='Angular']")).click();
+		driver.findElement(By.xpath("//button[contains(@class,'multiselect dropdown')]//following::ul/li[8]//input[@value='Java']")).click();
+		driver.findElement(By.xpath("//ul[@class='multiselect-container dropdown-menu']/li[10]/a/label[@class='checkbox']")).click();
 		
       
 	}
