@@ -5,7 +5,7 @@ public class Overriding {
 	public static void main(String[] args) {
 		
 		A obj =new B();
-		System.out.println("a+b"+obj.getClass().getName()+" "+obj.add(2, 3));
+		System.out.println("ssssa+b"+obj.getClass().getName()+" "+obj.add(2, 3));
 		
 		
 	}
